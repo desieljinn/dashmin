@@ -1,5 +1,6 @@
-<?php include('components/header.php');
-include('query.php')
+<?php 
+include('components/header.php');
+include('php/query.php')
 ?>
 
  <!-- Blank Start -->
@@ -7,11 +8,11 @@ include('query.php')
                 <div class="row vh-100 bg-light rounded mx-0">
                     <div class="col-md-12 px-3 py-5">
                         <h3>Add Category</h3>
-                        <form>
+                        <form method="post" enctype="multipart/form-data">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Category Name</label>
                                     <input type="text" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" name="Addcategory name">
+                                        aria-describedby="emailHelp" name="categoryName">
                                     <div id="emailHelp" class="form-text">
                                     </div>
                                 </div>
